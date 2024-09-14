@@ -1,0 +1,35 @@
+company_research_task:
+  description: >
+    Conduct a thorough research about {company} to understand their business
+    Make sure you get a deep understanding of their company, business model,
+    and broader market and competitive landscape.
+    You should also find the latest news about the company.
+  expected_output: >
+    A report summarising what you discover about {company}
+  agent: company_researcher
+
+topic_research_task:
+  description: >
+    Your colleague will be putting together a proposal for a customer who is
+    looking for a solution in the {topic} domain. Conduct a thorough research
+    about {topic} to understand the domain to a low level. You should look at
+    the latest trends, technologies, and best practices in the domain.
+  expected_output: >
+    A report summarising what you discover about {topic}
+  agent: topic_researcher
+
+report_preparation_task:
+  description: >
+    Gather information about the company {company} and topic {topic} from the
+    research team and compile it into a comprehensive report for the executive
+    team.
+  expected_output: >
+    A comprehensive report summarising the information about {company} and {topic}.
+    Your report should be well-structured and easy to read, highlighting the most
+    important information for the executive team.
+    It should end with a set of questions and discussion points that that help your
+    exceutive team discuss the topic with the customer and understand the problem,
+    identify potential solutions and be able to come back with a proposal for the
+    customer at a later date.
+
+  agent: executive_assistant

@@ -1,0 +1,5 @@
+pytest
+crewai
+crewai-tools
+streamlit
+watchdog
