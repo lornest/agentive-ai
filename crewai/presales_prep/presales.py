@@ -1,5 +1,4 @@
 import streamlit as st
-import presales_prep.main as pp
 
 st.title('Customer meeting preparation')
 st.write('''This is a tool to help you prepare for a customer meeting.
@@ -9,7 +8,5 @@ company = st.text_input('Company name')
 topic = st.text_input('Topic')
 st.button('Start')
 
-result = pp.PresalesPrepCrew().crew().kickoff(inputs={'company': company, 'topic': topic})
-
-if result:
-    st.write(result)
+if company and topic:
+    st.write(f'Preparing for meeting with {company} on {topic}')
